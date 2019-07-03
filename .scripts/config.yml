@@ -1,0 +1,109 @@
+version: 2
+jobs:
+  npm-install:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{ .Branch }-{ checksum "package-lock.json" }
+            - v1-deps-{ .Branch }
+            - v1-deps
+      - run:
+          name: Install
+          command: "[[ -d node_modules ]] || npm ci"
+      - save_cache:
+           key: v1-deps-{ .Branch }-{ checksum "package-lock.json" }
+           paths:
+              - ./node_modules/
+              - /root/.npm
+  publish:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{ .Branch }-{ checksum "package-lock.json" }
+            - v1-deps-{ .Branch }
+            - v1-deps
+      - run:
+          name: Build
+          command: npm run build
+      - save_cache:
+           key: dist-v1-{{ .Branch }}-{{ .Revision }}
+           paths:
+              - ./dist/
+  unit-test:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{ .Branch }-{ checksum "package-lock.json" }
+            - v1-deps-{ .Branch }
+            - v1-deps
+      - run:
+          name: Test
+          command: npm run test:unit
+  e2e-test:
+    docker:
+      - image: circleci/node
+      - image: cypress/browsers:chrome67
+    steps:
+      - checkout
+      - run:
+          name: Test
+          command: npm install && npm run test:e2e 
+  deploy-to-staging:
+    machine: true
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dist-v1-{{ .Branch }}-{{ .Revision }}
+            - dist-v1-{{ .Branch }}-
+            - dist-v1--
+      - run:
+          name: Setup Heroku
+          command: chmod +x .circleci/setup-heroku.sh && .circleci/setup-heroku.sh $HEROKU_STAGING_APP_NAME
+      - run: heroku container:login
+      - run: echo "pushing app $HEROKU_STAGING_APP_NAME" && heroku container:push web -a $HEROKU_STAGING_APP_NAME
+      - run: heroku releases --app $HEROKU_STAGING_APP_NAME
+      - run: echo "releasing app $HEROKU_STAGING_APP_NAME" && heroku container:release web -a $HEROKU_STAGING_APP_NAME
+      - run: heroku releases --app $HEROKU_STAGING_APP_NAME
+  deploy-to-production:
+    machine: true
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dist-v1-{{ .Branch }}-{{ .Revision }}
+            - dist-v1-{{ .Branch }}-
+            - dist-v1--
+      - run:
+          name: Setup Heroku
+          command: chmod +x .circleci/setup-heroku.sh && .circleci/setup-heroku.sh $HEROKU_APP_NAME
+      - run: heroku container:login
+      - run: echo "pushing app $HEROKU_APP_NAME" && heroku container:push web -a $HEROKU_APP_NAME
+      - run: heroku releases --app $HEROKU_APP_NAME
+      - run: echo "releasing app $HEROKU_APP_NAME" && heroku container:release web -a $HEROKU_APP_NAME
+      - run: heroku releases --app $HEROKU_APP_NAME
+  staging-e2e:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: Ping site
+          command: echo "TODO"
+  ping:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: Ping site
+          command: chmod +x .circleci/ping.sh && .circleci/ping.sh $APP_URL

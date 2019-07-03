@@ -1,0 +1,36 @@
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - npm-install
+      - unit-test:
+          requires:
+          - npm-install
+      - e2e-test:
+          requires:
+          - npm-install
+      - publish:
+          requires:
+          - unit-test
+          # - e2e-test
+      - deploy-to-staging:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - publish
+      - staging-e2e:
+          requires:
+            - deploy-to-staging
+      - deploy-to-production:
+          type: approval
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - staging-e2e
+      - ping:
+          requires:
+            - deploy-to-production

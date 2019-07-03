@@ -8,7 +8,7 @@ STAGING_APP_NAME=$APP_NAME-staging
 STAGING_APP_URL="https://${STAGING_APP_NAME}.herokuapp.com/"
 
 CIRCLE_TOKEN=$2
-CIRCLE_PROJECT="hello-world"
+CIRCLE_PROJECT="hello-karta"
 
 # validate
 if [ -z ${APP_NAME} ]; then echo "First variable should be app name"; exit -1; fi

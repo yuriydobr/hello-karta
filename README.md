@@ -1,5 +1,11 @@
 # Path to production
 
+## What are we building?
+
+![Pipeline](pipeline.png)
+
+## Why are we building it?
+
 ## Stack
 
 - VueJS

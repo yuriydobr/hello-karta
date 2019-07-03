@@ -2,6 +2,7 @@
 
 ## What are we building?
 
+A path to your own production!
 ![Pipeline](pipeline.png)
 
 ## Why are we building it?
@@ -61,6 +62,62 @@
   - [Node download](https://nodejs.org/en/download/)
 
 ## Plan
+
+- [ ] Fork and clone this repo
+- [ ] [Watch your repo in CircleCI](https://circleci.com/add-projects)
+- [ ] Check out your first pipeline!
+- [ ] [Get your API token (keep this safe!)](https://circleci.com/account/api)
+- [ ] Run the ./scripts/app-builder.sh [Your app name] [circleCI token]
+- [ ] Check out your first Heroku apps!
+- [ ] Create your vue project
+  
+    ``` node
+    vue create
+    ```
+
+- [ ] Run your project
+  
+    ``` node
+    npm run serve
+    ```
+
+- [ ] Unit test your project
+  
+    ``` node
+    npm run test:unit
+    ```
+
+- [ ] Run E2e tests
+  
+    ``` node
+    npm run test:e2e
+    ```
+
+- [ ] Build your project
+  
+    ``` node
+    npm run build
+    ```
+
+- [ ] Dockerize
+  
+    ``` shell
+    docker build -t [your app name] .
+    ```
+
+- [ ] Run your app
+  
+    ``` shell
+    docker run -p 5000:5000 [your app name]
+    ```
+
+- [ ] Create your pipeline (hint /.scripts)
+- [ ] Checkout your staging site!
+- [ ] Promote to production
+- [ ] We have a new requirement that has come in- Practising TDD techiques implement the following feature.
+    > TODO
+- [ ] Get your code to production!
+- [ ] Take a break.
 
 ## Vue cheatsheet
 

@@ -72,7 +72,19 @@ A path to your own production!
 - [ ] Create your vue project
   
     ``` node
-    vue create
+    vue create --preset ./vue [your project name]
+    ```
+
+- [ ] Replace this line in package.json
+
+    ``` node
+    "test:e2e": "vue-cli-service test:e2e - --headless",
+    ```
+
+- [ ] Add this line to package.json
+
+    ``` node
+    "test:e2e:no-dev": "vue-cli-service test:e2e - --headless --url ",
     ```
 
 - [ ] Run your project

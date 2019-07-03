@@ -2,17 +2,17 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - npm-install
+      - build
       - unit-test:
           requires:
-          - npm-install
+          - build
       - e2e-test:
           requires:
-          - npm-install
+          - build
       - publish:
           requires:
           - unit-test
-          # - e2e-test
+          - e2e-test
       - deploy-to-staging:
           filters:
             branches:

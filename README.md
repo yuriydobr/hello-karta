@@ -5,7 +5,11 @@
 A path to your own production!
 ![Pipeline](pipeline.png)
 
+TODO
+
 ## Why are we building it?
+
+TODO
 
 ## Stack
 
@@ -17,6 +21,8 @@ A path to your own production!
 - Powershell/ Bash
 
 ## Prerequisites
+
+Come to the session with your machine ready for action! Sign up and install the bellow.
 
 ### Accounts
 
@@ -56,8 +62,11 @@ A path to your own production!
 - Git
 - Docker
   - [Docker download](https://hub.docker.com/?overlay=onboarding)
-- Visual Studio Code (or similar)
+- [Visual Studio Code (or similar)](https://code.visualstudio.com/download)
 - Bash (with cURL) or Poweshell
+  ``` shell
+  brew install curl
+  ```
 - Node/ NPM
   - [Node download](https://nodejs.org/en/download/)
 

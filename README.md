@@ -63,73 +63,73 @@ A path to your own production!
 
 ## Plan
 
-- [ ] Fork and clone this repo
-- [ ] [Watch your repo in CircleCI](https://circleci.com/add-projects)
-- [ ] Check out your first pipeline!
-- [ ] [Get your API token (keep this safe!)](https://circleci.com/account/api)
-- [ ] Run the ./scripts/app-builder.sh [Your app name] [circleCI token]
-- [ ] Check out your first Heroku apps!
-- [ ] Create your vue project
+1. Fork and clone this repo
+2. [Watch your repo in CircleCI](https://circleci.com/add-projects)
+3. Check out your first pipeline!
+4. [Get your API token (keep this safe!)](https://circleci.com/account/api)
+5. Run the ./scripts/app-builder.sh [Your app name] [circleCI token]
+6. Check out your first Heroku apps!
+7. Create your vue project
   
     ``` node
     vue create --preset ./vue [your project name]
     ```
 
-- [ ] Replace this line in package.json
+8. Replace this line in package.json
 
     ``` node
     "test:e2e": "vue-cli-service test:e2e - --headless",
     ```
 
-- [ ] Add this line to package.json
+9. Add this line to package.json
 
     ``` node
     "test:e2e:no-dev": "vue-cli-service test:e2e - --headless --url ",
     ```
 
-- [ ] Run your project
+10. Run your project
   
     ``` node
     npm run serve
     ```
 
-- [ ] Unit test your project
+11. Unit test your project
   
     ``` node
     npm run test:unit
     ```
 
-- [ ] Run E2e tests
+12. Run E2e tests
   
     ``` node
     npm run test:e2e
     ```
 
-- [ ] Build your project
+13. Build your project
   
     ``` node
     npm run build
     ```
 
-- [ ] Dockerize
+14. Dockerize
   
     ``` shell
     docker build -t [your app name] .
     ```
 
-- [ ] Run your app
+15. Run your app
   
     ``` shell
     docker run -p 5000:5000 [your app name]
     ```
 
-- [ ] Create your pipeline (hint /.scripts)
-- [ ] Checkout your staging site!
-- [ ] Promote to production
-- [ ] We have a new requirement that has come in- Practising TDD techiques implement the following feature.
+16. Create your pipeline (hint /.scripts)
+17. Checkout your staging site!
+18. Promote to production
+19. We have a new requirement that has come in- Practising TDD techiques implement the following feature.
     > TODO
-- [ ] Get your code to production!
-- [ ] Take a break.
+20. Get your code to production!
+21. Take a break.
 
 ## Vue cheatsheet
 

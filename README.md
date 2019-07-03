@@ -21,7 +21,7 @@
 
 - Vue CLI
   
-  ``` shell
+  ``` node
   npm install -g @vue/cli
   ```
 

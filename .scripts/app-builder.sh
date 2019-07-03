@@ -29,7 +29,7 @@ HEROKU_API_KEY=$(heroku auth:token)
 echo 'done.'
 
 echo 'Getting circleci username...'
-login=$(curl -v --silent "https://circleci.com/api/v1.1/me?circle-token=680d81ce750dc3fa6d3cfc11eafe32c4b7e29b9a" --stderr - | grep login)
+login=$(curl -v --silent "https://circleci.com/api/v1.1/me?circle-token=${CIRCLE_TOKEN}" --stderr - | grep login)
 login=${login/"\"login\" : \""} 
 CIRCLE_LOGIN=$(echo $login | cut -f1 -d "\"")
 echo 'Circle user '$CIRCLE_LOGIN

@@ -29,6 +29,10 @@ Note:
 - Provide standardized feedback loops
 - Enable fast product iterations.
 
+Note: 
+
+- Through automation
+
 ---
 
 ## Best practice

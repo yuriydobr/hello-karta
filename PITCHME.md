@@ -47,6 +47,22 @@ Note:
 
 ---
 
+## Risk reduction
+
+- Low-risk Releases are Incremental
+- Decouple Deployment and Release
+- Focus on Reducing Batch Size
+- Optimize for Resilience
+
+Note:
+
+- Our goal is to architect our systems so that we can release individual changes independently, tight coupling will lead to big-bang risky releases.
+- Our ultimate goal is to separate the technical decision to deploy from the business decision to launch a feature, so we can deploy continuously but release new features on demand. Two commonly-used patterns that enable this goal are dark launching and feature toggles.
+- When each deployment consists of tens of lines of code or a few configuration settings, it becomes much easier to perform root cause analysis and restore service in the case of an incident.
+- Once we accept that failures are inevitable, we should start to move away from the idea of investing all our effort in preventing problems, and think instead about how to restore service as rapidly as possible when something goes wrong
+
+---
+
 ## Triggers
 
 - Code commit

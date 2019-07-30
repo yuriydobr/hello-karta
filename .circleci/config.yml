@@ -160,7 +160,7 @@ workflows:
       - staging-e2e:
           requires:
             - deploy-to-staging
-      - deploy-to-production:
+      - approve-release:
           type: approval
           filters:
             branches:
@@ -168,6 +168,13 @@ workflows:
                 - complete
           requires:
             - staging-e2e
+      - deploy-to-production:
+          filters:
+            branches:
+              only:
+                - complete
+          requires:
+            - approve-release
       - ping:
           requires:
             - deploy-to-production

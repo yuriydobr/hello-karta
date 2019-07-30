@@ -3,12 +3,15 @@ workflows:
   build_and_test:
     jobs:
       - build
+      - code-quality:
+          requires:
+          - build
       - unit-test:
           requires:
-          - build
+          - code-quality
       - e2e-test:
           requires:
-          - build
+          - code-quality
       - publish:
           requires:
           - unit-test

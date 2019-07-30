@@ -44,10 +44,10 @@ Note:
 
 Note:
 
-- We want to be sure the thing we’re deploying is the same thing we’ve tested throughout the deployment pipeline, so if a deployment fails we can eliminate the packages as the source of the failure.
-- including development. This way, we test the deployment process many, many times before it gets to production, and again, we can eliminate it as the source of any problems.
-- Have a script that validates all your application’s dependencies are available, at the location you have configured your application. Make sure your application is running and available as part of the deployment process.
-- Keep your environments similar. Although they may differ in hardware configuration, they should have the same version of the operating system and middleware packages, and they should be configured in the same way. This has become much easier to achieve with modern virtualization and container technology.
+- We want to be sure the thing we’re deploying is the same thing we’ve tested throughout the deployment pipeline, eliminating the packages as the source of the failure.
+- We test the deployment process many, many times before it gets to production,eliminating it as the source of any problems.
+- Make sure your application is running and available as part of the deployment process.
+- Keep your environments similar. Same version of the operating system and middleware packages, configured in the same way. This has become much easier to achieve with modern virtualization, container technology and infrastructure as code.
 
 ---
 
@@ -60,10 +60,10 @@ Note:
 
 Note:
 
-- Our goal is to architect our systems so that we can release individual changes independently, tight coupling will lead to big-bang risky releases.
-- Our ultimate goal is to separate the technical decision to deploy from the business decision to launch a feature, so we can deploy continuously but release new features on demand. Two commonly-used patterns that enable this goal are dark launching and feature toggles.
+- Architect our systems so that we can release individual changes independently, tight coupling will lead to big-bang risky releases.
+- Separate the technical decision to deploy from the business decision to launch a feature, so we can deploy continuously but release new features on demand. Two commonly-used patterns that enable this goal are dark launching and feature toggles.
 - When each deployment consists of tens of lines of code or a few configuration settings, it becomes much easier to perform root cause analysis and restore service in the case of an incident.
-- Once we accept that failures are inevitable, we should start to move away from the idea of investing all our effort in preventing problems, and think instead about how to restore service as rapidly as possible when something goes wrong
+- Failures are inevitable, how do we restore service as rapidly as possible when something goes wrong
 
 ---
 

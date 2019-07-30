@@ -1,0 +1,38 @@
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - code-quality:
+          requires:
+          - build
+      - unit-test:
+          requires:
+          - code-quality
+      - e2e-test:
+          requires:
+          - code-quality
+      - publish:
+          requires:
+          - unit-test
+          - e2e-test
+      - deploy-to-staging:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - publish
+      - staging-e2e:
+          requires:
+            - deploy-to-staging
+      - approve-release:
+          type: approval
+          requires:
+            - staging-e2e
+      - deploy-to-production:
+          requires:
+            - approve-release
+      - ping:
+          requires:
+            - deploy-to-production

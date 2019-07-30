@@ -142,20 +142,19 @@ workflows:
           - build
       - unit-test:
           requires:
-          - build
+          - code-quality
       - e2e-test:
           requires:
-          - build
+          - code-quality
       - publish:
           requires:
           - unit-test
           - e2e-test
-          - code-quality
       - deploy-to-staging:
           filters:
             branches:
               only:
-                - master
+                - complete
           requires:
             - publish
       - staging-e2e:
@@ -166,7 +165,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - complete
           requires:
             - staging-e2e
       - ping:

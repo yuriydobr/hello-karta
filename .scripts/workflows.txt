@@ -3,12 +3,15 @@ workflows:
   build_and_test:
     jobs:
       - build
+      - code-quality:
+          requires:
+          - build
       - unit-test:
           requires:
-          - build
+          - code-quality
       - e2e-test:
           requires:
-          - build
+          - code-quality
       - publish:
           requires:
           - unit-test
@@ -17,20 +20,27 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - complete
           requires:
             - publish
       - staging-e2e:
           requires:
             - deploy-to-staging
-      - deploy-to-production:
+      - approve-release:
           type: approval
           filters:
             branches:
               only:
-                - master
+                - complete
           requires:
             - staging-e2e
+      - deploy-to-production:
+          filters:
+            branches:
+              only:
+                - complete
+          requires:
+            - approve-release
       - ping:
           requires:
             - deploy-to-production

@@ -35,22 +35,6 @@ Note:
 
 ---
 
-## Best practice
-
-- Only build packages once
-- Deploy the same way to every environment
-- Smoke test your deployments
-- Keep your environments similar
-
-Note:
-
-- We want to be sure the thing we’re deploying is the same thing we’ve tested throughout the deployment pipeline, eliminating the packages as the source of the failure.
-- We test the deployment process many, many times before it gets to production,eliminating it as the source of any problems.
-- Make sure your application is running and available as part of the deployment process.
-- Keep your environments similar. Same version of the operating system and middleware packages, configured in the same way. This has become much easier to achieve with modern virtualization, container technology and infrastructure as code.
-
----
-
 ## Risk reduction
 
 - Low-risk Releases are Incremental
@@ -64,6 +48,22 @@ Note:
 - Separate the technical decision to deploy from the business decision to launch a feature, so we can deploy continuously but release new features on demand. Two commonly-used patterns that enable this goal are dark launching and feature toggles.
 - When each deployment consists of tens of lines of code or a few configuration settings, it becomes much easier to perform root cause analysis and restore service in the case of an incident.
 - Failures are inevitable, how do we restore service as rapidly as possible when something goes wrong
+
+---
+
+## Best practice
+
+- Only build packages once
+- Deploy the same way to every environment
+- Smoke test your deployments
+- Keep your environments similar
+
+Note:
+
+- We want to be sure the thing we’re deploying is the same thing we’ve tested throughout the deployment pipeline, eliminating the packages as the source of the failure.
+- We test the deployment process many, many times before it gets to production,eliminating it as the source of any problems.
+- Make sure your application is running and available as part of the deployment process.
+- Keep your environments similar. Same version of the operating system and middleware packages, configured in the same way. This has become much easier to achieve with modern virtualization, container technology and infrastructure as code.
 
 ---
 

@@ -17,7 +17,8 @@ Note:
 
 Note:
 
-- Automate the software delivery process
+- A tool to
+  - Automate the software delivery process
 - -
 - Deploying One change, One artefact
 - Promoted through a single pipeline, deployed to many environments
@@ -38,7 +39,7 @@ Note:
 Note: 
 
 - Through automation
-- Leading to risk reduction, increasing delivery confidence
+- increasing delivery confidence and reducing risk
 
 ---
 

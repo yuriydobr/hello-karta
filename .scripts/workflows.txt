@@ -20,7 +20,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - tw
           requires:
             - publish
       - staging-e2e:

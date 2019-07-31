@@ -91,6 +91,8 @@ Note:
 
 ## Triggers
 
+Note: 
+
 - Code commit
 - Scheduled/ CRON
 - Manual

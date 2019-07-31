@@ -17,9 +17,8 @@ Note:
 
 Note:
 
-- automate
-- software delivery process
-- Once change, One artefact
+- Automate the software delivery process
+- One change, One artefact
 - Promoted through a single pipeline, deployed to many environments
 - -
 - Details
@@ -38,23 +37,23 @@ Note:
 Note: 
 
 - Through automation
+- Leading to risk reduction, increasing delivery confidence
 
 ---
 
 ## Risk reduction
 
-- Low-risk Releases are Incremental
-- Decouple Deployment and Release
-- Focus on Reducing Batch Size
-- Optimize for Resilience
+- Low-risk releases are incremental
+- Decouple deployment and release
+- Focus on reducing batch size
+- Optimize for resilience
 
 Note:
 
 - Independently releasable changes
-- tight coupling == big-bang risky releases.
-- Separate the technical decision to deploy from the business decision
-- Continously deploy
-- Dark releases and feature toggles
+  - tight coupling == big-bang risky releases.
+- Technical decision to deploy != the business decision
+  - Continously deploy + Dark releases and feature toggles
 - 10s of lines of code == easier root cause analysis + service restoration
 - Failures are inevitable, rapid service restoration
 - -
@@ -76,7 +75,7 @@ Note:
 Note:
 
 - Same thing we’ve tested throughout the deployment pipeline
-- eliminating the packages as the source of the failure
+  - eliminating the packages as the source of the failure
 - We test the deployment process many times before it gets to production
 - Running and available as part of the deployment process.
 - Same version of the operating system and middleware packages
@@ -91,12 +90,12 @@ Note:
 
 ## Triggers
 
-Note: 
-
 - Code commit
 - Scheduled/ CRON
 - Manual
-- -
+  
+Note:
+
 - Details
 - Each change in code triggers an automated build-and-test sequence for the given project, providing feedback to the engineering team
 - You may want to run tests constantly over a period or perform cleanup tasks

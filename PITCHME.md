@@ -119,7 +119,7 @@ Note:
 
 ---
 
-## 6. Acceptance tests
+## 6. Smoke tests
 
 ![Smoke](pitch/pipeline/6.png)
 

@@ -73,6 +73,21 @@ Come to the session with your machine ready for action! Sign up and install the 
 - Node/ NPM
   - [Node download](https://nodejs.org/en/download/)
 
+## Validate tools are installed
+
+  ``` shell
+  vue --version
+  heroku --version
+  git --version
+  docker --version
+  node --version
+  npm --version
+  curl --version
+  ```
+
+The output should look something like this
+![Versions](versions.png)
+
 ## Plan
 
 1. Fork and clone this repo

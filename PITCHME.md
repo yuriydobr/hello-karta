@@ -18,7 +18,8 @@ Note:
 Note:
 
 - Automate the software delivery process
-- One change, One artefact
+- -
+- Deploying One change, One artefact
 - Promoted through a single pipeline, deployed to many environments
 - -
 - Details
@@ -50,12 +51,13 @@ Note:
 
 Note:
 
-- Independently releasable changes
+- Architect decouple systems.
+  - Independently releasable changes
   - tight coupling == big-bang risky releases.
 - Technical decision to deploy != the business decision
-  - Continously deploy + Dark releases and feature toggles
+  - Dark releases and feature toggles = Continously deploy 
 - 10s of lines of code == easier root cause analysis + service restoration
-- Failures are inevitable, rapid service restoration
+- Failures are inevitable, move towards rapid service restoration
 - -
 - Details
 - Architect our systems so that we can release individual changes independently, tight coupling will lead to big-bang risky releases.
@@ -96,7 +98,6 @@ Note:
   
 Note:
 
-- Details
 - Each change in code triggers an automated build-and-test sequence for the given project, providing feedback to the engineering team
 - You may want to run tests constantly over a period or perform cleanup tasks
 - In some situations a manual triggered pipeline or stage may be necessary, you may require sign-off from QA or have set release dates

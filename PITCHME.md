@@ -17,9 +17,16 @@ Note:
 
 Note:
 
+- automate
+- software delivery process
+- Once change, One artefact
+- Promoted through a single pipeline, deployed to many environments
+
+Details
+
 - A CI/CD pipeline helps you automate steps in your software delivery process
 - One artefact, promoted through a single pipeline, deployed to many environments
-
+  
 ---
 
 ## Why do we use them?
@@ -44,10 +51,20 @@ Note:
 
 Note:
 
+- Independently releasable changes
+- tight coupling == big-bang risky releases.
+- Separate the technical decision to deploy from the business decision
+- Continously deploy
+- Dark releases and feature toggles
+- 10s of lines of code == easier root cause analysis + service restoration
+- Failures are inevitable, rapid service restoration
+
+Details
+
 - Architect our systems so that we can release individual changes independently, tight coupling will lead to big-bang risky releases.
 - Separate the technical decision to deploy from the business decision to launch a feature, so we can deploy continuously but release new features on demand. Two commonly-used patterns that enable this goal are dark launching and feature toggles.
 - When each deployment consists of tens of lines of code or a few configuration settings, it becomes much easier to perform root cause analysis and restore service in the case of an incident.
-- Failures are inevitable, how do we restore service as rapidly as possible when something goes wrong
+- Failures are inevitable, how do we restore service as rapidly as possible when something goes wrong -->
 
 ---
 
@@ -59,6 +76,14 @@ Note:
 - Keep your environments similar
 
 Note:
+
+- Same thing we’ve tested throughout the deployment pipeline
+- eliminating the packages as the source of the failure
+- We test the deployment process many times before it gets to production
+- Running and available as part of the deployment process.
+- Same version of the operating system and middleware packages
+
+Details
 
 - We want to be sure the thing we’re deploying is the same thing we’ve tested throughout the deployment pipeline, eliminating the packages as the source of the failure.
 - We test the deployment process many, many times before it gets to production,eliminating it as the source of any problems.
@@ -73,7 +98,7 @@ Note:
 - Scheduled/ CRON
 - Manual
 
-Note:
+Details
 
 - Each change in code triggers an automated build-and-test sequence for the given project, providing feedback to the engineering team
 - You may want to run tests constantly over a period or perform cleanup tasks
@@ -165,4 +190,5 @@ Note:
 ---
 
 ## Lets get going
+
 [https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)

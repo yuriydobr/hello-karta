@@ -254,15 +254,15 @@ vue create --preset ./hello-karta/.vue hello-karta
 
 ## Cheatsheet
 
-    npm run serve
-    npm run test:unit
-    npm run test:e2e
-    npm run build
-
 @[1]
 @[2]
 @[3]
 @[4]
+
+    npm run serve
+    npm run test:unit
+    npm run test:e2e
+    npm run build
 
 ---
 

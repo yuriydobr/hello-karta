@@ -234,15 +234,22 @@ Note:
 
 ### And setup env variables
 
-chmod +x ./.scripts/app-builder.sh && 
-./.scripts/app-builder.sh [Your app name] [circleCI token]
+@[1]
+@[2]
 
-Did it work??
-[https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)
+    ```
+    chmod +x ./.scripts/app-builder.sh
+    ./.scripts/app-builder.sh [Your app name] [circleCI token]
+    ```
+
+@size[14px](*Did it work?? https://dashboard.heroku.com/apps*)
 
 ---
 
 ## Create a vue project
+
+@[1]
+@[2]
 
     ```
     cd ..

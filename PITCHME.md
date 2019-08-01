@@ -259,6 +259,11 @@ vue create --preset ./hello-karta/.vue hello-karta
     npm run test:e2e
     npm run build
 
+@[1]
+@[2]
+@[3]
+@[4]
+
 ---
 
 ## Lets create a pipeline!

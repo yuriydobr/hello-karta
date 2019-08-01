@@ -235,8 +235,7 @@ Note:
 
 ### And setup env variables
 
-    chmod +x ./.scripts/app-builder.sh
-    ./.scripts/app-builder.sh [Your app name] [circleCI token]
+---?gist=worthington10/d5d3808dea426feac1a02613ddc16d7a
 
 Did it work??
 [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)

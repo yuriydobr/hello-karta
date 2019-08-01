@@ -235,7 +235,7 @@ Note:
 
 ### And setup env variables
 
----?gist=worthington10/d5d3808dea426feac1a02613ddc16d7a
+---?gist=worthington10TW/619e7d2076e13380ce402a22bbaaf900
 
 Did it work??
 [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)

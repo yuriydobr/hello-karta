@@ -234,8 +234,8 @@ Note:
 
 ### And setup env variables
 
-@[1]
-@[2]
+@[3]
+@[4]
 
     ```
     chmod +x ./.scripts/app-builder.sh
@@ -248,8 +248,8 @@ Note:
 
 ## Create a vue project
 
-@[1]
-@[2]
+@[3]
+@[4]
 
     ```
     cd ..

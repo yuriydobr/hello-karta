@@ -235,7 +235,8 @@ Note:
 
 ### And setup env variables
 
----?gist=worthington10TW/619e7d2076e13380ce402a22bbaaf900
+chmod +x ./.scripts/app-builder.sh && 
+./.scripts/app-builder.sh [Your app name] [circleCI token]
 
 Did it work??
 [https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)
@@ -244,22 +245,20 @@ Did it work??
 
 ## Create a vue project
 
-    ```shell
-    cd .. && vue create --preset ./hello-karta/.vue hello-karta
-    ```
-    * remember to copy package.json from ./.scripts to the root *
+cd .. && 
+vue create --preset ./hello-karta/.vue hello-karta
+
+* remember to copy package.json from ./.scripts to the root *
 
 ---
 
 ## Cheatsheet
 
-    ```shell
     npm run serve
     npm run test:unit
     npm run test:e2e
     npm run build
-    ```
-
+    
 ---
 
 ## Lets create a pipeline!

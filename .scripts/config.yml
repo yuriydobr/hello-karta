@@ -124,6 +124,20 @@ jobs:
       - run:
           name: E2E tests over $STAGING_APP_URL
           command: echo $STAGING_APP_URL && npm ci && npm run test:e2e:no-dev $STAGING_APP_URL
+  production-e2e:
+    docker:
+      - image: cypress/browsers:chrome67
+      - image: circleci/node
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-deps-{ .Branch }-{ checksum "package-lock.json" }
+            - v1-deps-{ .Branch }
+            - v1-deps
+      - run:
+          name: E2E tests over $APP_URL
+          command: echo $APP_URL && npm ci && npm run test:e2e:no-dev $APP_URL
   ping:
     docker:
       - image: circleci/node
@@ -167,6 +181,6 @@ workflows:
       - deploy-to-production:
           requires:
             - approve-release
-      - ping:
+      - production-e2e:
           requires:
             - deploy-to-production

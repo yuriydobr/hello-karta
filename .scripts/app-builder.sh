@@ -12,6 +12,7 @@ CIRCLE_PROJECT="hello-karta"
 
 # validate
 if [ -z ${APP_NAME} ]; then echo "First variable should be app name"; exit -1; fi
+if [ ${#APP_NAME} -ge 30 ]; then echo "App name must be less than 30 characters "; exit -1; fi
 if [ -z ${CIRCLE_TOKEN} ]; then echo "Second variable should be circleci token"; exit -1; fi
 
 echo 'creating '$APP_NAME

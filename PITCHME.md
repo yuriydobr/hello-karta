@@ -163,7 +163,7 @@ Note:
 
 ## TADA!
 
-![Pipeline](pipeline.png)
+![Pipeline](pitch/pipline/pipeline.png)
 
 ---
 

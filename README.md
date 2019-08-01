@@ -4,7 +4,7 @@
 ## What are we building?
 
 A path to your own production!
-![Pipeline](pipeline.png)
+![Pipeline](pitch/pipline/pipeline.png)
 
 ## Why are we building it?
 
@@ -86,7 +86,7 @@ Come to the session with your machine ready for action! Sign up and install the 
   ```
 
 The output should look something like this
-![Versions](versions.png)
+![Versions](pitch/versions.png)
 
 ## Vue cheatsheet
 

@@ -246,8 +246,8 @@ Did it work??
 ## Create a vue project
 
     ```
-cd ..
-vue create --preset ./hello-karta/.vue hello-karta
+    cd ..
+    vue create --preset ./hello-karta/.vue hello-karta
     ```
 
 @size[14px](*remember to copy package.json from ./.scripts to the root*)

@@ -226,8 +226,7 @@ Note:
 
 ## You've created your first pipeline!
 
-![FirstPipeline](pitch/plan/FirstPipeline.png)
-![FirstPipelineComplete](pitch/plan/FirstPipelineComplete.png)
+![FirstPipeline](pitch/plan/FirstPipelineCombined.png)
 
 ---
 

@@ -197,17 +197,15 @@ Note:
 ## Validate tools
 
     ```
-  vue --version
-  heroku --version
-  git --version
-  docker --version
-  node --version
-  npm --version
-  curl --version
-    ```
+    vue --version
+    heroku --version
+     git --version
+    docker --version
+    node --version
+    npm --version
+    curl --version
 
-The output should look something like this
-![Versions](pitch/versions.png)
+    ```
 
 ---
 
@@ -251,8 +249,8 @@ The output should look something like this
 
 ### And setup env variables
 
+@[2]
 @[3]
-@[4]
 
     ```
     chmod +x ./.scripts/app-builder.sh
@@ -265,8 +263,8 @@ The output should look something like this
 
 ## Create a vue project
 
+@[2]
 @[3]
-@[4]
 
     ```
     cd ..

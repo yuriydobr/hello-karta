@@ -250,7 +250,7 @@ cd ..
 vue create --preset ./hello-karta/.vue hello-karta
     ```
 
-*^remember to copy package.json from ./.scripts to the root^*
+@size[14px](*remember to copy package.json from ./.scripts to the root*)
 
 ---
 

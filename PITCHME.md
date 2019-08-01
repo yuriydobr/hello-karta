@@ -235,7 +235,7 @@ Note:
 
 ### And setup env variables
 
-    ``` shell
+    ```
     chmod +x ./.scripts/app-builder.sh && ./.scripts/app-builder.sh [Your app name] [circleCI token]
     ```
 
@@ -246,7 +246,7 @@ Did it work??
 
 ## Create a vue project
 
-    ``` shell
+    ```
     cd .. && vue create --preset ./hello-karta/.vue hello-karta
     ```
     * remember to copy package.json from ./.scripts to the root *
@@ -278,7 +278,7 @@ Did it work??
 
 ## Get to prod
 
-![Pipeline](pitch/pipline/pipeline.png)
+![Pipeline](pitch/pipeline/pipeline.png)
 
 ---
 

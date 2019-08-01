@@ -163,7 +163,7 @@ Note:
 
 ## TADA!
 
-![Pipeline](pitch/pipline/pipeline.png)
+![Pipeline](pitch/pipeline/pipeline.png)
 
 ---
 
@@ -210,6 +210,8 @@ Note:
 
 ## Follow
 
+![Clone](pitch/plan/Follow.png)
+
 [https://circleci.com](https://circleci.com)
 
 ---
@@ -249,6 +251,8 @@ Did it work??
     ```
     * remember to copy package.json from ./.scripts to the root *
 
+---
+
 ## Cheatsheet
 
     ``` shell
@@ -258,16 +262,27 @@ Did it work??
     npm run build
     ```
 
+---
+
 ## Lets create a pipeline!
 
 ![Pipeline](pitch/pipline/pipeline.png)
+
+---
 
 ## Get to staging
 
 ![Manual gate](pitch/pipeline/7.png)
 
+---
+
 ## Get to prod
 
 ![Pipeline](pitch/pipline/pipeline.png)
 
+---
+
 ## NEW REQUIREMENT!!!
+
+---
+

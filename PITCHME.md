@@ -258,12 +258,12 @@ vue create --preset ./hello-karta/.vue hello-karta
     npm run test:unit
     npm run test:e2e
     npm run build
-    
+
 ---
 
 ## Lets create a pipeline!
 
-![Pipeline](pitch/pipline/pipeline.png)
+![Pipeline](pitch/pipeline/pipeline.png)
 
 ---
 

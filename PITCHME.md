@@ -207,7 +207,7 @@ Note:
 
     ```
 
----?image=pitch/versions.png&position=right
+---?image=./pitch/versions.png&position=right&size=55% 100%
 
 ## Fork
 

@@ -192,7 +192,7 @@ Note:
 
 [https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
 
----
+---?image=./pitch/versions.png&position=right&size=55% 50%
 
 ## Validate tools
 
@@ -207,7 +207,7 @@ Note:
 
     ```
 
----?image=./pitch/versions.png&position=right&size=55% 100%
+---
 
 ## Fork
 

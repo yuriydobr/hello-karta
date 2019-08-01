@@ -163,7 +163,7 @@ Note:
 
 ## TADA!
 
-![Pipeline](pitch/pipline/pipeline.png)
+![Pipeline](pitch/pipeline/pipeline.png)
 
 ---
 
@@ -191,3 +191,122 @@ Note:
 ## Lets get going
 
 [https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
+
+---?image=pitch/versions.png&position=right&size=55% 50%
+
+## Validate tools
+
+    ```
+    vue --version
+    heroku --version
+    git --version
+    docker --version
+    node --version
+    npm --version
+    curl --version
+    ```
+
+---
+
+## Fork
+
+![Fork](pitch/plan/Fork.png)
+
+[https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
+
+---
+
+## Clone
+
+![Clone](pitch/plan/Clone.png)
+
+---
+
+## Follow
+
+![Clone](pitch/plan/Follow.png)
+
+[https://circleci.com](https://circleci.com)
+
+---
+
+## Generate a token
+
+![CreateToken](pitch/plan/CreateToken.png)
+
+[https://circleci.com/account/api](https://circleci.com/account/api)
+
+---
+
+## You've created your first pipeline!
+
+![FirstPipeline](pitch/plan/FirstPipelineCombined.png)
+
+---
+
+## Create your apps
+
+### And setup env variables
+
+@[2]
+@[3]
+
+    ```
+    chmod +x ./.scripts/app-builder.sh
+    ./.scripts/app-builder.sh [Your app name] [circleCI token]
+    ```
+
+@size[14px](*Did it work?? https://dashboard.heroku.com/apps*)
+
+---
+
+## Create a vue project
+
+@[2]
+@[3]
+
+    ```
+    cd ..
+    vue create --preset ./hello-karta/.vue hello-karta
+    ```
+
+@size[14px](*remember to copy package.json from ./.scripts to the root*)
+
+---
+
+## Cheatsheet
+
+@[1]
+@[2]
+@[3]
+@[4]
+
+    npm run serve
+    npm run test:unit
+    npm run test:e2e
+    npm run build
+
+---
+
+## Lets create a pipeline!
+
+![Pipeline](pitch/pipeline/pipeline.png)
+
+---
+
+## Get to staging
+
+![Manual gate](pitch/pipeline/7.png)
+
+---
+
+## Get to prod
+
+![Pipeline](pitch/pipeline/pipeline.png)
+
+---
+
+## NEW REQUIREMENT!!!
+
+---
+

@@ -194,6 +194,23 @@ Note:
 
 ---
 
+## Validate tools
+
+    ```
+  vue --version
+  heroku --version
+  git --version
+  docker --version
+  node --version
+  npm --version
+  curl --version
+    ```
+
+The output should look something like this
+![Versions](pitch/versions.png)
+
+---
+
 ## Fork
 
 ![Fork](pitch/plan/Fork.png)

@@ -191,3 +191,83 @@ Note:
 ## Lets get going
 
 [https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
+
+---
+
+## Fork
+
+![Fork](pitch/plan/Fork.png)
+
+[https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
+
+---
+
+## Clone
+
+![Clone](pitch/plan/Clone.png)
+
+---
+
+## Follow
+
+[https://circleci.com](https://circleci.com)
+
+---
+
+## Generate a token
+
+![CreateToken](pitch/plan/CreateToken.png)
+
+[https://circleci.com/account/api](https://circleci.com/account/api)
+
+---
+
+## You've created your first pipeline!
+
+![FirstPipeline](pitch/plan/FirstPipeline.png)
+![FirstPipelineComplete](pitch/plan/FirstPipelineComplete.png)
+
+---
+
+## Create your apps
+
+### And setup env variables
+
+    ``` shell
+    chmod +x ./.scripts/app-builder.sh && ./.scripts/app-builder.sh [Your app name] [circleCI token]
+    ```
+
+Did it work??
+[https://dashboard.heroku.com/apps](https://dashboard.heroku.com/apps)
+
+---
+
+## Create a vue project
+
+    ``` shell
+    cd .. && vue create --preset ./hello-karta/.vue hello-karta
+    ```
+    * remember to copy package.json from ./.scripts to the root *
+
+## Cheatsheet
+
+    ``` shell
+    npm run serve
+    npm run test:unit
+    npm run test:e2e
+    npm run build
+    ```
+
+## Lets create a pipeline!
+
+![Pipeline](pitch/pipline/pipeline.png)
+
+## Get to staging
+
+![Manual gate](pitch/pipeline/7.png)
+
+## Get to prod
+
+![Pipeline](pitch/pipline/pipeline.png)
+
+## NEW REQUIREMENT!!!

@@ -4,7 +4,7 @@
 ## What are we building?
 
 A path to your own production!
-![Pipeline](pitch/pipline/pipeline.png)
+![Pipeline](pitch/pipeline/pipeline.png)
 
 ## Why are we building it?
 

@@ -199,7 +199,7 @@ Note:
     ```
     vue --version
     heroku --version
-     git --version
+    git --version
     docker --version
     node --version
     npm --version
@@ -207,7 +207,7 @@ Note:
 
     ```
 
----
+---?image=pitch/versions.png&position=right
 
 ## Fork
 

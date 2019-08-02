@@ -313,9 +313,31 @@ TODO explination
 
 ## Circle CI
 
-TODO explination
+- Workflows for job orchestration
+- First-class Docker support
+- Language-agnostic support
 
---- 
+Note:
+
+- Complete control of execution- build, test, deploy
+- Docker at its heart
+- Supports any language that builds on Linux or macOS
+
+---
+
+## Workflows
+
+![Workflows](pitch/plan/Workflows.png)
+
+Note:
+
+- True pipelines
+- Fan in and out
+- Manually triggers
+- Visible feedback
+- Branch filtering
+
+---
 
 ## Get to staging
 

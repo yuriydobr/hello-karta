@@ -12,9 +12,9 @@ Note:
 
 ## What is a CI/CD pipeline?
 
-- @css[](Initiates code builds)
-- @css[](Runs automated tests)
-- @css[](Deploys your code)
+- @css[fragment](Initiates code builds)
+- @css[fragment](Runs automated tests)
+- @css[fragment](Deploys your code)
 
 Note:
 

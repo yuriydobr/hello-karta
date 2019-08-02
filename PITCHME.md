@@ -1,5 +1,6 @@
 # Get to production!
 
+[https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
 Matthew Worthington
 
 Note:
@@ -257,6 +258,16 @@ Note:
     ```
 
 @size[14px](*Did it work?? https://dashboard.heroku.com/apps*)
+@size[14px](*https://[your-app-name]-staging.herokuapp.com/*)
+@size[14px](*https://[your-app-name].herokuapp.com/*)
+
+---
+
+## Did it work?
+
+[https://[your-app-name].herokuapp.com/](https://[your-app-name].herokuapp.com/)
+[https://[your-app-name]-staging.herokuapp.com/](https://[your-app-name]-staging.herokuapp.com/)
+![NewApp](pitch/plan/NewApp.png)
 
 ---
 

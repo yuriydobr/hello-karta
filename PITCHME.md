@@ -12,9 +12,9 @@ Note:
 
 ## What is a CI/CD pipeline?
 
-- @css[fragment](Initiates code builds)
-- @css[fragment](Runs automated tests)
-- @css[fragment](Deploys your code)
+@css[fragment](Initiates code builds)
+@css[fragment](Runs automated tests)
+@css[fragment](Deploys your code)
 
 Note:
 
@@ -35,7 +35,7 @@ Note:
 - Reduce cost of deployment
 - Remove manual errors
 - Provide standardized feedback loops
-- Enable fast product iterations.
+- Enable fast product iterations
 
 Note: 
 
@@ -46,10 +46,10 @@ Note:
 
 ## Risk reduction
 
-- Low-risk releases are incremental
-- Decouple deployment and release
-- Focus on reducing batch size
-- Optimize for resilience
+@css[fragment](Low-risk releases are incremental)
+@css[fragment](Decouple deployment and release)
+@css[fragment](Focus on reducing batch size)
+@css[fragment](Optimize for resilience)
 
 Note:
 
@@ -71,10 +71,10 @@ Note:
 
 ## Best practice
 
-- Only build packages once
-- Deploy the same way to every environment
-- Smoke test your deployments
-- Keep your environments similar
+@css[fragment](Only build packages once)
+@css[fragment](Deploy the same way to every environment)
+@css[fragment](Smoke test your deployments)
+@css[fragment](Keep your environments similar)
 
 Note:
 
@@ -94,9 +94,9 @@ Note:
 
 ## Triggers
 
-- Code commit
-- Scheduled/ CRON
-- Manual
+@css[fragment](Code commit)
+@css[fragment](Scheduled/ CRON)
+@css[fragment](Manual)
   
 Note:
 

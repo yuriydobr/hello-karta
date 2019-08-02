@@ -303,7 +303,21 @@ Note:
 
 ## VueJS
 
-TODO explination
+@ul
+
+- Simplicity
+- Testable
+- Flexibility
+- Fast and small
+
+@ulend
+
+Note:
+
+- Straightforward template syntax- Handlebars
+- Easy to test- mocha/ jest/ jamine
+- Component based model- Rich official libraries or make your own
+- 30kb, virtual dom- concept same as react
 
 ---
 

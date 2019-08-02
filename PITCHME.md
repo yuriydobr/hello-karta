@@ -325,8 +325,6 @@ Note:
 
 ---?image=pitch/plan/Workflows.png&size=30% auto
 
-## Workflows
-
 Note:
 
 - True pipelines

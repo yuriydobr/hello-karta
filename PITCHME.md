@@ -323,7 +323,7 @@ Note:
 - Docker at its heart
 - Supports any language that builds on Linux or macOS
 
----?image=pitch/plan/Workflows.png&size=80% auto
+---?image=pitch/plan/Workflows.png&size=30% auto
 
 ## Workflows
 

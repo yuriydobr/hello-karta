@@ -46,10 +46,10 @@ Note:
 
 ## Risk reduction
 
-@css[fragment](Low-risk releases are incremental)
-@css[fragment](Decouple deployment and release)
-@css[fragment](Focus on reducing batch size)
-@css[fragment](Optimize for resilience)
+@css[fragment](- Low-risk releases are incremental)
+@css[fragment](- Decouple deployment and release)
+@css[fragment](- Focus on reducing batch size)
+@css[fragment](- Optimize for resilience)
 
 Note:
 

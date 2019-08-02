@@ -319,6 +319,12 @@ Note:
 - Component based model- Rich official libraries or make your own
 - 30kb, virtual dom- concept same as react
 
+---?image=pitch/plan/VueStructure.png&size=30% auto
+
+Note:
+
+- Main -> App -> Views -> Components
+
 ---
 
 ## Cheatsheet

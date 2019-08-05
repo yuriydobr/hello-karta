@@ -1,5 +1,6 @@
 # Get to production!
 
+[https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
 Matthew Worthington
 
 Note:
@@ -11,9 +12,13 @@ Note:
 
 ## What is a CI/CD pipeline?
 
+@ul
+
 - Initiates code builds
 - Runs automated tests
 - Deploys your code
+
+@ulend
 
 Note:
 
@@ -45,10 +50,14 @@ Note:
 
 ## Risk reduction
 
+@ul
+
 - Low-risk releases are incremental
 - Decouple deployment and release
 - Focus on reducing batch size
 - Optimize for resilience
+
+@ulend
 
 Note:
 
@@ -70,10 +79,14 @@ Note:
 
 ## Best practice
 
+@ul
+
 - Only build packages once
 - Deploy the same way to every environment
 - Smoke test your deployments
 - Keep your environments similar
+
+@ulend
 
 Note:
 
@@ -93,10 +106,14 @@ Note:
 
 ## Triggers
 
+@ul
+
 - Code commit
 - Scheduled/ CRON
 - Manual
-  
+
+@ulend
+
 Note:
 
 - Each change in code triggers an automated build-and-test sequence for the given project, providing feedback to the engineering team
@@ -192,7 +209,7 @@ Note:
 
 [https://github.com/worthington10TW/hello-karta](https://github.com/worthington10TW/hello-karta)
 
----?image=pitch/versions.png&position=right&size=55% 50%
+---
 
 ## Validate tools
 
@@ -257,6 +274,16 @@ Note:
     ```
 
 @size[14px](*Did it work?? https://dashboard.heroku.com/apps*)
+@size[14px](*https://[your-app-name]-staging.herokuapp.com/*)
+@size[14px](*https://[your-app-name].herokuapp.com/*)
+
+---
+
+## Did it work?
+
+[https://[your-app-name].herokuapp.com/](https://[your-app-name].herokuapp.com/)
+[https://[your-app-name]-staging.herokuapp.com/](https://[your-app-name]-staging.herokuapp.com/)
+![NewApp](pitch/plan/NewApp.png)
 
 ---
 
@@ -271,6 +298,32 @@ Note:
     ```
 
 @size[14px](*remember to copy package.json from ./.scripts to the root*)
+
+---
+
+## VueJS
+
+@ul
+
+- Simplicity
+- Testable
+- Flexibility
+- Fast and small
+
+@ulend
+
+Note:
+
+- Straightforward template syntax- Handlebars
+- Easy to test- mocha/ jest/ jamine
+- Component based model- Rich official libraries or make your own
+- 30kb, virtual dom- concept same as react
+
+---?image=pitch/plan/VueStructure.png&size=30% auto
+
+Note:
+
+- Main -> App -> Views -> Components
 
 ---
 
@@ -294,6 +347,30 @@ Note:
 
 ---
 
+## Circle CI
+
+- Workflows for job orchestration
+- First-class Docker support
+- Language-agnostic support
+
+Note:
+
+- Complete control of execution- build, test, deploy
+- Docker at its heart
+- Supports any language that builds on Linux or macOS
+
+---?image=pitch/plan/Workflows.png&size=30% auto
+
+Note:
+
+- True pipelines
+- Fan in and out
+- Manually triggers
+- Visible feedback
+- Branch filtering
+
+---
+
 ## Get to staging
 
 ![Manual gate](pitch/pipeline/7.png)
@@ -307,6 +384,3 @@ Note:
 ---
 
 ## NEW REQUIREMENT!!!
-
----
-

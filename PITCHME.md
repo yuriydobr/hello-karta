@@ -12,22 +12,6 @@ Note:
 
 ## Prerequisites
 
----
-
-@snap[east]
-
-### Accounts
-
-- GitHub
-- Heroku
-- CircleCI
-
-@snapend
-
-@snap[west]
-
-### Tools
-
 - VueCli
 - Heroku
 - CircleCI
@@ -36,7 +20,11 @@ Note:
 - Powershell/ bash & cUrl
 - Node/ Npm
 
-@snapend
+Note:
+
+- GitHub
+- Heroku
+- CircleCI
 
 ---
 

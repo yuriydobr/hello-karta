@@ -10,6 +10,26 @@ Note:
 
 ---
 
+## Prerequisites
+
+### Accounts
+
+- GitHub
+- Heroku
+- CircleCI
+
+### Tools
+
+- VueCli
+- Heroku
+- CircleCI
+- Git
+- Docker
+- Powershell/ bash & cUrl
+- Node/ Npm
+  
+---
+
 ## What is a CI/CD pipeline?
 
 @ul

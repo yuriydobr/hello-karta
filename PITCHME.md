@@ -16,15 +16,21 @@ Note:
 
 ### Accounts
 
+@ul
+
 - GitHub
 - Heroku
 - CircleCI
+  
+@ulend
 
 @snapend
 
 @snap[west span-50]
 
 ### Tools
+
+@ul
 
 - VueCli
 - Heroku
@@ -33,7 +39,9 @@ Note:
 - Docker
 - Powershell/ bash & cUrl
 - Node/ Npm
-  
+
+@ulend
+
 @snapend
 
 ---

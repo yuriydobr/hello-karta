@@ -12,11 +12,17 @@ Note:
 
 ## Prerequisites
 
+@snap[east span-50]
+
 ### Accounts
 
 - GitHub
 - Heroku
 - CircleCI
+
+@snapend
+
+@snap[west span-50]
 
 ### Tools
 
@@ -28,6 +34,8 @@ Note:
 - Powershell/ bash & cUrl
 - Node/ Npm
   
+@snapend
+
 ---
 
 ## What is a CI/CD pipeline?

@@ -16,7 +16,7 @@ A CI/CD pipeline helps you automate steps in your software delivery process, suc
 
 During this session we will create, test, build, run, deploy a VueJS app.
 
-> You build it, you run it.
+### You build it, you run it.
 
 ## Stack
 

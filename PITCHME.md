@@ -59,7 +59,7 @@ Note:
 - Provide standardized feedback loops
 - Enable fast product iterations.
 
-Note: 
+Note:
 
 - Through automation
 - increasing delivery confidence and reducing risk

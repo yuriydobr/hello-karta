@@ -5,4 +5,8 @@ describe('My First Test', () => {
     cy.visit('/');
     cy.contains('h1', 'Welcome to Your Vue.js App');
   });
+  it('Should link to about page', () => {
+    cy.contains('About').click();
+    cy.contains('h1', 'This is an about page');
+  });
 });

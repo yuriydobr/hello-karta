@@ -403,5 +403,6 @@ Note:
 
 ## New requirement
 
-Implement a ticker that starts from 0 and increments on a button click
-
+- Implement a ticker
+- With initial state of '0'
+- Increments by one on each button click

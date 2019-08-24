@@ -401,4 +401,7 @@ Note:
 
 ---
 
-## NEW REQUIREMENT!!!
+## New requirement
+
+Implement a ticker that starts from 0 and increments on a button click
+

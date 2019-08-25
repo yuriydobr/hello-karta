@@ -285,10 +285,13 @@ Note:
 
 @[2]
 @[3]
+@[5]
 
     ```
     chmod +x ./.scripts/app-builder.sh
     ./.scripts/app-builder.sh [Your app name] [circleCI token]
+    //Or powershell users
+    ./.scripts/app-builder.ps1 [Your app name] [circleCI token]
     ```
 
 @size[14px](*Did it work?? https://dashboard.heroku.com/apps*)
@@ -359,6 +362,14 @@ Note:
 
 ---
 
+## Cypress
+
+![logo](pitch/tools/cypress.jpeg)
+
+Test that the homepage links to the about page
+
+---
+
 ## Lets create a pipeline!
 
 ![Pipeline](pitch/pipeline/pipeline.png)
@@ -403,6 +414,22 @@ Note:
 
 ## New requirement
 
-- Implement a ticker
-- With initial state of '0'
-- Increments by one on each button click
+@ul
+
+- As a user
+- I want to see how many times I click a button
+- So that I can test out my amazing TDD skills
+
+@ulend
+
+---
+
+## New requirement
+
+- As a user
+- I want to see how many times I click a button
+- So that I can test out my amazing TDD skills
+
+@size[14px](*The ticker starts at 0*)
+@size[14px](*The ticker state is not persisted*)
+@size[14px](*Ticker to increment by on each click*)

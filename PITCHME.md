@@ -430,6 +430,6 @@ Note:
 - I want to see how many times I click a button
 - So that I can test out my amazing TDD skills
 
-@size[14px](*The ticker starts at 0*)
-@size[14px](*The ticker state is not persisted*)
-@size[14px](*Ticker to increment by on each click*)
+- @size[14px](*The ticker starts at 0*)
+- @size[14px](*The ticker state is not persisted*)
+- @size[14px](*Ticker to increment by on each click*)

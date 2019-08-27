@@ -283,6 +283,8 @@ Note:
 
 ### And setup env variables
 
+#### App name < 25 char
+
 @[2]
 @[3]
 @[5]

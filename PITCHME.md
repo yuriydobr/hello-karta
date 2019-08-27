@@ -16,7 +16,7 @@ Note:
 - Heroku
 - CircleCI
 - Git
-- Docker
+- ~~Docker~~
 - Powershell/ bash & cUrl
 - Node/ Npm
 

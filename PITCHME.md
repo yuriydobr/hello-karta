@@ -318,6 +318,7 @@ Note:
     ```
     cd ..
     vue create --preset ./hello-karta/.vue hello-karta
+    //Merge when prompted
     ```
 
 @size[14px](*remember to copy package.json from ./.scripts to the root*)

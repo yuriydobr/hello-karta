@@ -13,7 +13,7 @@ Note:
 ## Prerequisites
 
 - VueCli
-- Heroku
+- HerokuCli
 - CircleCI
 - Git
 - ~~Docker~~
